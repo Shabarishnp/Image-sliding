@@ -1,2 +1,2 @@
-# Image-sliding
-The image move using arrow keys
+**Image-sliding**
+The image moves using arrow keys

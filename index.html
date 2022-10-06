@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+.red{
+    background-color: chocolate;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    /* transition: 0.5s; */
+}
+/* .red:hover{
+    transform: scale(1.1);
+} */
+
+.yellogreen{
+    background-color: yellowgreen;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
+.blue{
+    background-color: rgb(89, 198, 241);
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
+.yellow{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img{
+    height: 250px;
+    width: 250px;
+}
+    </style>
+</head>
+<body>
+    <div class="container1 flex">
+        <div class="red">
+            <img src="sthree.png">
+        </div>
+        <div class="yellogreen"></div>
+    </div>
+    <div class="container2 flex">
+        <div class="blue"></div>
+        <div class="yellow">
+        </div>
+    </div>
+    <script>
+        let img=document.querySelector("img")
+        img.style.position="absolute"
+         img.style.left="380px"
+         img.style.top="1.0px"
+        window.addEventListener("keydown",keypress)
+       function keypress(key){
+        if(key.keyCode=="39"){
+            img.style.left="685px"
+            img.style.transition="0.8s"
+        }
+        else if(key.keyCode=="40"){
+            img.style.top="305px"
+        }
+        else if(key.keyCode=="37"){
+            img.style.left="380px"
+            img.style.top="305px"
+        }
+        else if(key.keyCode=="38"){
+            img.style.top="1.3px"
+        }
+    }
+    </script>
+</body>
+</html>
